@@ -5,5 +5,12 @@ $data = file_get_contents($source);
 
 $tasks = json_decode($data, true);
 
-var_dump($tasks);
+$newTask = $_POST['task'] ?? '';
+
+$tasks[] = $newTask;
+
+$tasks = json_endcode($tasks);
+
+file_put_contents($source, $tasks);
+
 ?>
