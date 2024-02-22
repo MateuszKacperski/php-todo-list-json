@@ -2,7 +2,8 @@ const {createApp} = Vue;
 
 const app = createApp({
     data: () => ({
-        prova: 'prova',
+        task: [],
+        newTask: '',
     })
 })
 
