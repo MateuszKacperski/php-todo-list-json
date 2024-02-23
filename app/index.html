@@ -25,7 +25,7 @@
             <h1 class="my-5">TODO LIST</h1>
             <div class="card">
                 <ul class="list-group list-group-flush">
-                  <li v-for="(task, id) in tasks" :key="id" class="list-group-item">{{ task.text}}</li>
+                  <li v-for="task in tasks" :key="task.id" class="list-group-item"><span :class="{'text-decoration-line-throught': task.done}">{{ task.text}}</span></li>
                 </ul>
               </div>
             <div>
